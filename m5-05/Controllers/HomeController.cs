@@ -131,6 +131,7 @@ namespace PluralsightDemo.Controllers
                     if (isAdmin) {
 
                         return RedirectToAction("Admin");
+                        //sdfdsfsdfsdf
                     }
                 
                     return RedirectToAction("Leerling");
