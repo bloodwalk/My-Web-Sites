@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+	  
+	
+	</style>
+</head>
+<body>
+  Maoyuu Maou Yuusha
+  
+  
+  
+	<script>
+	
+	
+	function Employee() {}
+		Employee.prototype.PayEmployee = function (){
+		alert('Hi there!');}
+		
+	function Consultant(){}
+	
+	
+	
+	Consultant.prototype = new Employee();
+	Consultant.PayEmployee = function () { alert('Pay Consulant'); }
+	/*Consultant.prototype.constructor = Consultant;*/
+	Consultant.test = "een test";
+	Employee.prototype.test2 = "een test2";
+	
+	var z = new Consultant()
+	var y = new Employee()
+	
+	/*document.write(z.test);  werkt dus niet*/
+	document.write(Employee.prototype.constructor);
+	document.write(Employee.prototype.test2);
+	/*document.write(Consultant.constructor); not available op instance
+	document.write(z.constructor);
+	document.write(y.constructor);*/
+
+
+</script>
+	
+   
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    
+</head>
+<body>
+   
+	
+    <script type = "text/javascript">
+	
+	/*var shape = function () {};
+	
+	
+var p = {
+    a: function () {
+       document.writeln("a"); 
+    }
+};
+
+var circle = new shape();
+
+
+circle.__proto__ = p;
+circle.a(); */
+
+	
+	
+	
+	
+	
+	
+	var Employee = function(){
+	  this.age ="45";
+	
+	}
+	
+	Employee.prototype.test= "9";
+	
+	
+	var Worker = function(){}
+	
+	Worker.prototype.__proto__= Employee.prototype;
+	Worker.prototype.newvariable ="eentest";
+	
+	var werker1 = new Worker()
+	
+	
+	document.writeln(werker1.test);
+	document.writeln(werker1.newvariable);
+	/*werker1.__proto__= {testt:"555ttt"};
+	
+	document.writeln(Function.prototype.__proto__);
+	
+    document.writeln(Object.prototype.__proto__);*/
+	
+	
+	
+	
+		
+		
+	</script>
+   
+</body>
+</html>
